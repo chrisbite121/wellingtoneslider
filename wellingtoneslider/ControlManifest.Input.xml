@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="wellingtoneslider" constructor="wellingtoneslider" version="0.0.3" display-name-key="wellingtoneslider" description-key="wellingtoneslider description" control-type="standard">
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
+    <property name="slidervalue" display-name-key="slider control value" description-key="slider control value" of-type-group="numbers" usage="bound" required="true" />
+    <property name="min" display-name-key="min control value" description-key="min control value" of-type="Decimal" usage="input" required="true" />
+    <property name="max" display-name-key="max control value" description-key="max control value" of-type="Decimal" usage="input" required="true" />
+    <property name="step" display-name-key="step control value" description-key="step control value" of-type="Decimal" usage="input" required="true" />
+    <property name="label" display-name-key="label control value" description-key="label displays above the control - left aligned" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="description" display-name-key="description control value" description-key="description displays below the control, can be left or center aligned" of-type="Multiple" usage="input" required="false" />
+    <property name="descriptionalignment" display-name-key="Center the description text?" description-key="use 0 or 1:  0 = left, 1 = centre" of-type="Whole.None" usage="input" required="false" />
+
+    <type-group name="numbers">
+        <type>Whole.None</type>
+        <type>Currency</type>
+        <type>FP</type>
+        <type>Decimal</type>
+    </type-group>
+
+    <resources>
+      <code path="index.ts" order="1"/>
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <css path="css/wellingtoneslider.css" order="1" />
+      <resx path="strings/wellingtoneslider.1033.resx" version="1.0.0" />
+      -->
+    </resources>
+    <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
+    <feature-usage>
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    -->
+  </control>
+</manifest>
