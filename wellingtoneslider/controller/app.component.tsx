@@ -1,8 +1,10 @@
 import  * as React from 'react';
-import { useState, useEffect, CSSProperties } from 'react';
-import { Slider, ISliderStyles, IStackTokens, Stack, IStackStyles, isControlled } from '@fluentui/react';
+import { useState, useEffect } from 'react';
+//import { Slider, IStackTokens, Stack } from '@fluentui/react';
+import { Slider } from '@fluentui/react/lib/Slider';
+import { IStackTokens, Stack } from '@fluentui/react/lib/Stack';
 import { IAppComponentProperties } from '../model/app.model';
-import { FontSizes } from '@fluentui/theme';
+import { FontSizes } from '@fluentui/theme/lib/fonts';
 
 const stackTokens: IStackTokens = { childrenGap: 5 };
 

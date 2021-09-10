@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="wellingtoneslider" constructor="wellingtoneslider" version="0.0.3" display-name-key="wellingtoneslider" description-key="wellingtoneslider description" control-type="standard">
+  <control namespace="wellingtoneslider" constructor="wellingtoneslider" version="0.0.4" display-name-key="wellingtoneslider" description-key="wellingtoneslider description" control-type="standard">
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
     <property name="slidervalue" display-name-key="slider control value" description-key="slider control value" of-type-group="numbers" usage="bound" required="true" />
     <property name="min" display-name-key="min control value" description-key="min control value" of-type="Decimal" usage="input" required="true" />
